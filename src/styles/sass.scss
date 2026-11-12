@@ -1,0 +1,60 @@
+// * margin & padding
+@for $i from 3 through 15{
+    .mt-#{$i*2}{
+        margin-top: #{$i*2}px;
+    }
+
+    .mb-#{$i*2}{
+        margin-bottom: #{$i*2}px;
+    }
+
+    .ml-#{$i*2}{
+        margin-left: #{$i*2}px;
+    }
+
+    .mr-#{$i*2}{
+        margin-right: #{$i*2}px;
+    }
+
+    .my-#{$i*2}{
+        margin-top: #{$i*2}px;
+        margin-bottom: #{$i*2}px;
+    }
+
+    .mx-#{$i*2}{
+        margin-left: #{$i*2}px;
+        margin-right: #{$i*2}px;
+    }
+
+    .pr-#{$i*2}{
+        padding-right: #{$i*2}px;
+    }
+
+    .pl-#{$i*2}{
+        padding-left: #{$i*2}px;
+    }
+}
+
+// * font sizes
+
+@for $i from 4 through 15{
+    .fs-#{$i*2}{
+        font-size: #{$i*2}px;
+    }
+}
+
+// * gap
+
+@for $i from 3 through 20{
+    .gap__#{$i*2}{
+        gap: #{$i*2}px;
+    }
+
+    .row__gap__#{$i*2}{
+        row-gap: #{$i*2}px;
+    }
+
+    .column__gap__#{$i*2}{
+        column-gap: #{$i*2}px;
+    }
+}

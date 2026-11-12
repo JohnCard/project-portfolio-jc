@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --background: #F5F7FC;
+  --surface: #FFFFFF;
+  --surface-secondary: #EEF1F8;
+
+  --primary: #647DBB;
+  --primary-light: #E8EDFA;
+
+  --border: #E2E7F0;
+  --text-primary: #26334A;
+  --text-secondary: #718096;
+}
+
+/* * default settings */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    min-height: 300dvh;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-wrap: balance;
+    line-height: 1.5;
+}
+
+i{
+    color: gray;
+    font-size: 25px;
+}
+
+ul{
+    list-style: none;
+}
+
+/* * background colors */
+.bg-F3F1EE{
+    background-color: #F3F1EE;
+}
+
+.bg-F0F0F5{
+    background-color: #F0F0F5;
+}
+
+.bg-F5F7FC{
+    background-color: #F5F7FC;
+}
+
+.bg-FFFFFF{
+    background-color: #FFFFFF;
+}
+
+.bg-E1E5EB{
+    background-color: #E1E5EB;
+}
+
+.bg-263746{
+    background-color: #263746;
+}
+
+.bg-343A40{
+    background-color: #343A40;
+}
+
+.color__dark{
+    color: #000;
+}
+/* * text-colors */
+.text-white{
+    color: whitesmoke;
+}
+/* * btn & links */
+.btn{
+    padding: 10px 25px;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 200ms ease-in-out, border 250ms ease-in-out;
+}
+
+.btn__light__theme{
+    color: #000;
+    background-color: #DCE6F1;
+}
+
+.btn__dark__theme{
+    color: whitesmoke;
+    background-color: #343A40;
+}
+
+.btn:hover{
+    color: #000;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .10);
+    border: .6px solid #000;
+}
+/* * flex styles */
+.flex__column{
+    flex-direction: column;
+}
+
+.flex__wrap{
+    flex-wrap: wrap;
+}
+
+.align__items__center{
+    align-items: center;
+}
+
+.align__items__start{
+    align-items: start;
+}
+
+.justify__content__between{
+    justify-content: space-between;
+}
+
+.justify__content__evenly{
+    justify-content: space-evenly;
+}
+
+.justify__content__center{
+    justify-content: center;
+}
+/* * displays */
+.d__flex{
+    display: flex;
+}
+
+.d__grid{
+    display: grid;
+}
+
+.d-block{
+    display: block;
+}
+
+/* * additional */
+.text-balance{
+    text-wrap: balance;
+}
+
+.text__align__end{
+    text-align: end;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.border__radius__50{
+    border-radius: 50%;
+}
+
+.max-width-550{
+    max-width: 550px;
+}
+
+.margin__auto{
+    margin: 0 auto;
+}
+
+.w__100{
+    width: 100%;
+}
+/* * components */
+.template__container{
+    padding: 20px 25px;
+}
+
+.inner__template{
+    column-gap: 40px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.template__img{
+    display: none;
+    max-width: 300px;
+    min-height: 280px;
+}
+/* * card header */
+.card__header{
+    row-gap: 30px;
+}
+
+.card__header .d__flex{
+    gap: 15px;
+}
+
+.card__header p{
+    max-width: 700px;
+}
+
+/* * presentation card */
+.presentation__card button:first-of-type {
+    padding: 10px 15px;
+    min-width: 200px;
+}
+
+.fa-arrow-right{
+    font-size: 1rem;
+}
+
+.presentation__icons{
+    gap: 15px;
+}
+/* * about me */
+.about__me__icons{
+    gap: 16px;
+}
+
+.about__me__icons .d__flex{
+    gap: 15px;
+}
+/* * stack */
+.stack{
+    gap: 20px;
+}
+
+.skill{
+    background-color: #aaa;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 5px;
+}
+/* * projects */
+.projects__container{
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project__img{
+    border-radius: 20px 20px 0 0;
+    max-height: 220px;
+}
+
+.project__data{
+    padding: 15px;
+}
+
+.project__data p{
+    line-height: 1.4;
+}
+
+.project__tools{
+    gap: 14px;
+}
+
+.tool__span{
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.project__links{
+    gap: 30px;
+}
+
+.project__links i{
+    font-size: 16px;
+}
+
+.project__link{
+    gap: 10px;
+}
+
+/* * trajectory */
+
+table{
+    border-left: 2px solid grey;
+    table-layout: fixed;
+}
+
+th{
+    padding-bottom: 25px;
+}
+
+th, td{
+    border-bottom: 1px solid #000;
+}
+
+td{
+    vertical-align: top;
+    padding: 20px;
+}
+
+.td_dot_container{
+    position: relative;
+}
+
+.dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #495057;
+  border-radius: 50%;
+  left: -10px;
+  top: 20px;
+}
+
+.td_span_text{
+    margin-left: 10px;
+}
+
+td:nth-child(1), th:nth-child(1){
+    width: 12%;
+}
+
+td:nth-child(2), th:nth-child(2){
+    width: 25%;
+}
+
+/* * Contact */
+.contact__section__container{
+    padding: 3rem;
+    row-gap: 2rem;
+}
+
+.contact__data__container{
+    gap: .8rem;
+}
+
+.contact__icon{
+    gap: 1.5rem;
+}
+
+.form__contact__container{
+    gap: 1rem;
+}
+
+input, textarea{
+    padding: 10px;
+}
+
+.full__columns{
+    grid-column: 1 / -1;
+}
+
+/* * Testimonies */
+.opinion__card{
+    padding: 20px;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.fa-star{
+    color: goldenrod;
+}
+/* * footer */
+footer{
+    padding: 20px 80px;
+}
+
+.max__width__300{
+    max-width: 350px;
+}
+
+/* * min-width queries */
+@media screen and (min-width: 500px){
+    .stack{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .template__container{
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .template__img{
+        display: inline-block;
+    }
+
+    .contact__section__container{
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .form__contact__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .input__submit{
+        grid-column: span 1;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .inner__template{
+        column-gap: 100px;
+    }
+
+    .template__img{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .inner__template{
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .template__img{
+        max-width: 500px;
+    }
+}
+
+/* * max-width queries */
+
+@media screen and (max-width: 800px){
+    .table__container{
+        display: none;
+    }
+}

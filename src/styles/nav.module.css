@@ -1,0 +1,77 @@
+.nav__top__container{
+    background-color: dodgerblue;
+    min-width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav__column li{
+    display: flex;
+}
+
+.nav__column li{
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__titles h4, .nav__row {
+    display: none;
+}
+
+.nav__titles i{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.nav__row li:last-child{
+    margin-left: 40px;
+}
+
+.nav__row li:last-child button, .nav__row a{
+    color: white;
+}
+
+.nav__hidden__container{
+    background-color: white;
+    min-width: 200px;
+    min-height: 100dvh;
+    box-shadow: none;
+    translate: -100%;
+    transition:  translate .6s ease, box-shadow .8s ease;
+    position: fixed;
+    top: 0;
+    left: 0;   
+}
+
+body:has(.nav__titles i:hover) .nav__hidden__container, body:has(.nav__column li:hover) .nav__hidden__container{
+    translate: 0%;
+    box-shadow: 0 20px 85px 20px #000;
+}
+
+.nav__column li{
+    padding: 20px;
+    transition: background-color .6s ease;
+}
+
+.nav__column li a{
+    color: #000;
+}
+
+.nav__column li:active{
+    background-color: gainsboro;
+}
+
+@media screen and (min-width: 700px){
+    body:has(.nav__titles i:hover) .nav__hidden__container, body:has(.nav__column li:hover) .nav__hidden__container, .nav__titles i{
+        display: none;
+    }
+
+    .nav__titles h4{
+        display: initial;
+    }
+
+    .nav__row{
+        display: flex;
+    }
+}
